@@ -33,7 +33,7 @@ blockquote {
       It will ideally be 25% of its parent's width.
       It will never be more than 100% of its parent's width.*/
   .card {
-    width: clamp(30ch, calc(1 / 4 * 100%), 100%);
+    width: clamp(40ch, calc(1 / 4 * 100%), 100%);
     min-width: 30ch;
     border: 0.5rem solid black;
   }

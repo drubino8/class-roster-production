@@ -42,20 +42,20 @@ const records = await getRecords('Roster');
 	  
 		  <figcaption>
 	  
-			<h1>{record.fields.name}</h1>
+			<h1 style={`color:${record.fields.color}`}>{record.fields.name}</h1>
 	  
-			<p class="emoji">This emjoi best desribes me: <span>{record.fields.emoji}</span></p>
-			<p class="weird">How am I weird? <span>{record.fields.weird}</span></p>
-			<p class="superpower">My superpower is: <span>{record.fields.superpower}</span></p>
-			<p class="karaoke">My karaoke jam is: <span>{record.fields.karaoke}</span></p>
+			<p class="emoji"><b>This emoji best desribes me:</b><br> <span>{record.fields.emoji}</span></p>
+			<p class="weird"><b>How am I weird?</b><br> <span>{record.fields.weird}</span></p>
+			<p class="superpower"><b>My superpower is:</b><br> <span>{record.fields.superpower}</span></p>
+			<p class="karaoke"><b>My karaoke jam is:</b><br> <span>{record.fields.karaoke}</span></p>
 	  
 			<h2>Favorites</h2>
 			<ul>
-			  <li class="color">CSS color name: <span>{record.fields.color}</span></li>
-			  <li class="software">Software Tool: <span>{record.fields.software}</span></li>
-			  <li class="character">Fictional Character: <span>{record.fields.character}</span></li>
-			  <li class="musicalArtist">Musical Artist: <span>{record.fields.musicalArtist}</span></li>
-			  <li class="comfortFood">Comfort Food: <span>{record.fields.comfortFood}</span></li>
+			  <li class="color"><b>CSS color name:</b> <span>{record.fields.color}</span></li>
+			  <li class="software"><b>Software Tool:</b> <span>{record.fields.software}</span></li>
+			  <li class="character"><b>Fictional Character:</b> <span>{record.fields.character}</span></li>
+			  <li class="musicalArtist"><b>Musical Artist:</b> <span>{record.fields.musicalArtist}</span></li>
+			  <li class="comfortFood"><b>Comfort Food:</b> <span>{record.fields.comfortFood}</span></li>
 			</ul>
 	  
 		  </figcaption>
